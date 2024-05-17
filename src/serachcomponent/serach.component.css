@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.fixed-header {
+
+    color: #333;
+
+    background-color: hsla(211, 100%, 35%, 0.651);
+    top: 0;
+    width: 100%;
+    z-index: 1200;
+
+    padding: 10px 20px;
+}
+
+/* Navigation and Links */
+.logo-nav-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        color: white;
+        /* Change the color of the link text */
+        text-decoration: none;
+        /* Remove underline */
+    }
+}
+
+a:hover {
+    color: darkblue;
+    /* Change color on hover */
+}
+
+.logo-nav-child a {
+    /* color: white; */
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 8px;
+}
+
+.logo-nav-child a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Search Container Styles */
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Search Results Dropdown */
+.search-results {
+    position: absolute;
+
+    width: calc(100% - 16px);
+    box-shadow: 0 4px 8px rgba(55, 41, 243, 0.2);
+    border: 1px solid #ddd;
+    list-style: none;
+    max-height: 100px;
+    overflow-y: auto;
+    z-index: 1001;
+    /* Above other content */
+}
+
+.search-results li a {
+    display: block;
+    padding: 10px;
+
+
+    text-decoration: none;
+}
+
+.search-results li a:hover {
+    background-color: #f8f8f8;
+}
+
+/* Authentication Buttons */
+.authentication-buttons {
+    margin-left: auto;
+    color: white;
+    margin-left: 5%;
+}
+
+.authentication-buttons button {
+
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .logo-nav-child {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .authentication-buttons {
+        margin-top: 10px;
+        /* Provides space from navigation links */
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

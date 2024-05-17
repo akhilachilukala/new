@@ -1,0 +1,28 @@
+.feedback-form {
+    width: 50%;
+    margin: auto;
+}
+
+.feedback-input,
+.feedback-textarea,
+.submit-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.feedback-textarea {
+    resize: vertical;
+    /* Allow vertical resizing of textarea */
+}
+
+@media (max-width: 768px) {
+    .feedback-form {
+        width: 80%;
+    }
+}

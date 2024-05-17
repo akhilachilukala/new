@@ -1,0 +1,64 @@
+.centered-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.centered-form label {
+    width: 100%;
+    /* Adjust as needed */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.centered-form select,
+.centered-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.creditCardNumber {
+    width: 100%;
+
+}
+
+.centered-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.centered-form button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.feedback-link {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    /* Center the text horizontally */
+    text-decoration: none;
+    /* Remove underline */
+    color: #007bff;
+    /* Link color */
+}
+
+.feedback-link:hover {
+    color: #0056b3;
+    /* Hover color */
+}
+
+
+@media screen and (min-width: 768px) {
+    .centered-form {
+        width: 50%;
+    }
+}

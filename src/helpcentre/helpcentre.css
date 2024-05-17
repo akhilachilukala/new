@@ -1,0 +1,79 @@
+/* Header */
+.header {
+    background-color: hsla(211, 100%, 35%, 0.651);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.main-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: doshed;
+}
+
+.logo-nav-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.logo-nav-child a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.logo-nav-child a:first-child {
+    margin-left: 0;
+}
+
+.logo-nav-child a:last-child {
+    margin-right: 0;
+}
+
+/* Main content */
+.help-docs {
+    padding-top: 70px;
+    /* Adjust according to header height */
+    margin-bottom: 50px;
+    text-align: center;
+    border: hsla(0, 0%, 100%, 0.205);
+    text-decoration: dashed;
+}
+
+/* Table of Contents */
+.toc-header {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.toc-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-list.hidden {
+    display: none;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .logo-nav-child {
+        flex-direction: column;
+    }
+
+    .logo-nav-child a {
+        margin: 10px 0;
+    }
+}
